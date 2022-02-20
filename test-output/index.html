@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Vodafone_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Vodafone Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Vodafone_Suite" class="navigator-link ">
+                    <span>TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Vodafone_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Vodafone_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Vodafone_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Vodafone_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Vodafone_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Vodafone_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Vodafone_Suite" class="hide-methods failed suite-Vodafone_Suite"> (hide)</a> <!-- hide-methods failed suite-Vodafone_Suite -->
+                      <a href="#" panel-name="suite-Vodafone_Suite" class="show-methods failed suite-Vodafone_Suite"> (show)</a> <!-- show-methods failed suite-Vodafone_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Vodafone_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="createnewuser(test@test.com)">createnewuser(test@test.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="createnewuser(hadeer)">createnewuser(hadeer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Vodafone_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Vodafone_Suite" class="hide-methods passed suite-Vodafone_Suite"> (hide)</a> <!-- hide-methods passed suite-Vodafone_Suite -->
+                      <a href="#" panel-name="suite-Vodafone_Suite" class="show-methods passed suite-Vodafone_Suite"> (show)</a> <!-- show-methods passed suite-Vodafone_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Vodafone_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="add2cart">add2cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="authenticatenewuser(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456...)">authenticatenewuser(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="authenticatenewuser(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, ...)">authenticatenewuser(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="authenticatenewuser(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345...)">authenticatenewuser(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="blousesubcategory">blousesubcategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="checkoutprocrss">checkoutprocrss</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="confirmmyorder">confirmmyorder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.createandauthenticateanewuser" class="method navigator-link" hash-for-method="createnewuser(hadeer@test5.com)">createnewuser(hadeer@test5.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="processaddressfunction">processaddressfunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="processbybankwire">processbybankwire</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="processonshipping">processonshipping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Vodafone_Suite" title="vodafonetask.selectblousesandcheckout" class="method navigator-link" hash-for-method="validateorder">validateorder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Vodafone_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Vodafone_Suite" class="panel Vodafone_Suite">
+          <div class="suite-Vodafone_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">vodafonetask.createandauthenticateanewuser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createnewuser(test@test.com)">
+                  </a> <!-- createnewuser(test@test.com) -->
+                  <span class="method-name">createnewuser</span>
+                  <span class="parameters">(test@test.com)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	You entered preregister email or test passed expected [Invalid email address.] but found [An account using this email address has already been registered. Please enter a valid password or request a new one.],
+	You entered invalid email format or test passed expected [An account using this email address has already been registered. Please enter a valid password or request a new one. ] but found [An account using this email address has already been registered. Please enter a valid password or request a new one.]
+	at vodafonetask.createandauthenticateanewuser.createnewuser(createandauthenticateanewuser.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createnewuser(hadeer)">
+                  </a> <!-- createnewuser(hadeer) -->
+                  <span class="method-name">createnewuser</span>
+                  <span class="parameters">(hadeer)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	You entered invalid email format or test passed expected [An account using this email address has already been registered. Please enter a valid password or request a new one. ] but found [Invalid email address.]
+	at vodafonetask.createandauthenticateanewuser.createnewuser(createandauthenticateanewuser.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vodafone_Suite-class-failed -->
+          <div class="suite-Vodafone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vodafonetask.selectblousesandcheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add2cart">
+                  </a> <!-- add2cart -->
+                  <span class="method-name">add2cart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blousesubcategory">
+                  </a> <!-- blousesubcategory -->
+                  <span class="method-name">blousesubcategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutprocrss">
+                  </a> <!-- checkoutprocrss -->
+                  <span class="method-name">checkoutprocrss</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmmyorder">
+                  </a> <!-- confirmmyorder -->
+                  <span class="method-name">confirmmyorder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="processaddressfunction">
+                  </a> <!-- processaddressfunction -->
+                  <span class="method-name">processaddressfunction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="processbybankwire">
+                  </a> <!-- processbybankwire -->
+                  <span class="method-name">processbybankwire</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="processonshipping">
+                  </a> <!-- processonshipping -->
+                  <span class="method-name">processonshipping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateorder">
+                  </a> <!-- validateorder -->
+                  <span class="method-name">validateorder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vodafone_Suite-class-passed -->
+          <div class="suite-Vodafone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vodafonetask.createandauthenticateanewuser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticatenewuser(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456...)">
+                  </a> <!-- authenticatenewuser(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456...) -->
+                  <span class="method-name">authenticatenewuser</span>
+                  <span class="parameters">(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456, 21, 123456, test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticatenewuser(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, ...)">
+                  </a> <!-- authenticatenewuser(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, ...) -->
+                  <span class="method-name">authenticatenewuser</span>
+                  <span class="parameters">(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticatenewuser(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345...)">
+                  </a> <!-- authenticatenewuser(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345...) -->
+                  <span class="method-name">authenticatenewuser</span>
+                  <span class="parameters">(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345, 21, 012345, test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createnewuser(hadeer@test5.com)">
+                  </a> <!-- createnewuser(hadeer@test5.com) -->
+                  <span class="method-name">createnewuser</span>
+                  <span class="parameters">(hadeer@test5.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vodafone_Suite-class-passed -->
+        </div> <!-- panel Vodafone_Suite -->
+        <div panel-name="test-xml-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/developer/eclipse-workspace/vodafonetask/TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Vodafone Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;vodafonetask.createandauthenticateanewuser&quot;/&gt;
+      &lt;class name=&quot;vodafonetask.selectblousesandcheckout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Vodafone Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Vodafone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Vodafone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Vodafone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Vodafone_Suite');
+function tableData_Vodafone_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'authenticatenewuser')
+data.setCell(0, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(0, 3, 15255);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkoutprocrss')
+data.setCell(1, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(1, 3, 9849);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createnewuser')
+data.setCell(2, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(2, 3, 7733);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createnewuser')
+data.setCell(3, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(3, 3, 7574);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'authenticatenewuser')
+data.setCell(4, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(4, 3, 7186);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createnewuser')
+data.setCell(5, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(5, 3, 6927);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'blousesubcategory')
+data.setCell(6, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(6, 3, 4552);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateorder')
+data.setCell(7, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(7, 3, 4398);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'authenticatenewuser')
+data.setCell(8, 2, 'vodafonetask.createandauthenticateanewuser')
+data.setCell(8, 3, 3987);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'processaddressfunction')
+data.setCell(9, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(9, 3, 3907);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'processonshipping')
+data.setCell(10, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(10, 3, 3557);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'confirmmyorder')
+data.setCell(11, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(11, 3, 3145);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'processbybankwire')
+data.setCell(12, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(12, 3, 2107);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'add2cart')
+data.setCell(13, 2, 'vodafonetask.selectblousesandcheckout')
+data.setCell(13, 3, 2049);
+window.suiteTableData['Vodafone_Suite']= { tableData: data, tableDiv: 'times-div-Vodafone_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Vodafone_Suite">
+              </div> <!-- times-div-Vodafone_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Vodafone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">vodafonetask.selectblousesandcheckout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startdriver</span>
+                <br/>
+                <span class="ignored-method-name">stopdriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Vodafone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">vodafonetask.createandauthenticateanewuser</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startdriver(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createnewuser(test@test.com)</span>
+                <span class="method-start">21332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createnewuser(hadeer)</span>
+                <span class="method-start">29074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createnewuser(hadeer@test5.com)</span>
+                <span class="method-start">36651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">authenticatenewuser(Hadeer, Hadeer, test@test.com, hadeerdody, 1, 1, 2022, Hadeer1, Hadeer1, test, test, test, 1, 123456...)</span>
+                <span class="method-start">43748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">authenticatenewuser(null, null, null, hadeerdody, 1, 1, 2022, Hadeer2, Hadeer3, test, test, test, 2, 12345, 21, 012345, ...)</span>
+                <span class="method-start">50936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">authenticatenewuser(Hadeer, Hadeer, hadeer@test5.com, hadeerdody, 1, 1, 2022, Hadeer, Hadeer, test, test, test, 3, 12345...)</span>
+                <span class="method-start">54931 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vodafonetask.selectblousesandcheckout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">blousesubcategory</span>
+                <span class="method-start">70219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add2cart</span>
+                <span class="method-start">74776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkoutprocrss</span>
+                <span class="method-start">76828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">processaddressfunction</span>
+                <span class="method-start">86679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">processonshipping</span>
+                <span class="method-start">90591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">processbybankwire</span>
+                <span class="method-start">94150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmmyorder</span>
+                <span class="method-start">96259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateorder</span>
+                <span class="method-start">99408 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vodafonetask.createandauthenticateanewuser</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">stopdriver</span>
+                <span class="method-start">108897 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

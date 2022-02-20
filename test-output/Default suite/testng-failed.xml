@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="vodafonetask.selectblouses">
+        <methods>
+          <include name="startdriver"/>
+          <include name="add2cart"/>
+          <include name="processaddressfunction"/>
+          <include name="signinfromcart"/>
+          <include name="validateorder"/>
+          <include name="checkoutprocrss"/>
+          <include name="processonshipping"/>
+          <include name="processbybankwire"/>
+          <include name="confirmmyorder"/>
+          <include name="stopdriver"/>
+        </methods>
+      </class> <!-- vodafonetask.selectblouses -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
